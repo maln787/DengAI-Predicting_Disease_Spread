@@ -1,6 +1,5 @@
 # DengAI-Predicting_Disease_Spread
-This project is a part of the [takehome assessment] for the role of Data Scientist at Constellation(https://www.helloconstellation.com/).
-DengAI: Predicting Disease Spread is a online challenge hosted by [DrivenData].
+This project is a part of the takehome assessment for the role of Data Scientist at **Constellation** (https://www.helloconstellation.com/). DengAI: Predicting Disease Spread is a online challenge hosted by **DrivenData**.
 
 
 ### Project Status: [Active/ Continually improving]
@@ -17,21 +16,16 @@ My task is to predict the number of dengue cases each week (in each location) ba
 An understanding of the relationship between climate and dengue dynamics can improve research initiatives and resource allocation to help fight life-threatening pandemics.
 
 ### Methods Used
-* Inferential Statistics
-* Machine Learning
+* Data Cleaning
+* Exploratory Data Analysis
 * Data Visualization
-* Predictive Modeling
-* etc.
+* Feature Selection
+* Modeling (Random Forest / XGBoost / GridSearchCV / Hyperparameter Tuning)
+* Time Series Forecasting (Prophet)
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
 * Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
 
 ## Project Description
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
