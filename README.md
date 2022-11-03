@@ -86,14 +86,26 @@ Below is the table of the results that I found by different algorithms in their 
 <img width="580" alt="Screen Shot 2022-11-03 at 1 06 19 AM" src="https://user-images.githubusercontent.com/44938585/199651234-6224b064-80e6-4b0d-ba30-e8f956a1b750.png">
 
 
-### Files consisting names and path
+## Files consisting names and path
 
+### Data Files Folder 
+This folder consists 4 files. 
+1. Dengue Features Train - Training dataset for the challenge
+2. Dengue Features Test - Test dataset
+3. Training Label - Target class which is total cases is given by city and time.
+4. Submission File - Week of the year and City for which we have to predict the total cases.
 
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+### Random Forest
+This folder consists of python files and submission file, made by applying the Random Forest Regression algorithm. It also has the file for selecting the best features.
 
-### Needs of this project
+### XGBoost
+This folder consists of python files and submission file, made by applying the XGBoost algorithm.
 
-An understanding of the relationship between climate and dengue dynamics can improve research initiatives and resource allocation to help fight life-threatening pandemics.
+### TimeSeries
+This consists the folder prophet in which there are two folders:
+1. modeling - This folder has all the .ipynb files with different settings of time series prophet model applied and the forecast for sj and forecast for iq are stored seperately as csvs in second folder which consists files related to submissions.
+2. submission_format_files - This folder has the all the submission related files: a) .ipynb for creating the final submission csv from the two different forecasted csv for two different cities. b) actual submission files. c) forecasted San Juan and Iquitos csvs from Time Series forecast by Prophet.
+
 
 ## Contact
 [(Back to table of contents)](#table-of-contents)
