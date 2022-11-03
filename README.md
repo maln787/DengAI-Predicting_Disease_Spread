@@ -102,7 +102,7 @@ This folder consists of python files and submission file, made by applying the R
 This folder consists of python files and submission file, made by applying the XGBoost algorithm.
 
 ### TimeSeries
-This consists the folder prophet in which there are two folders:
+This folder consists the folder prophet in which there are two folders:
 1. modeling - This folder has all the .ipynb files with different settings of time series prophet model applied and the forecast for sj and forecast for iq are stored seperately as csvs in second folder which consists files related to submissions.
 2. submission_format_files - This folder has the all the submission related files: a) .ipynb for creating the final submission csv from the two different forecasted csv for two different cities. b) actual submission files. c) forecasted San Juan and Iquitos csvs from Time Series forecast by Prophet.
 
