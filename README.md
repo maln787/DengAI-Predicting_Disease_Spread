@@ -10,7 +10,7 @@ This project is a part of the takehome assessment for the role of Data Scientist
 * [Project Description](#project-description)
     + [Data Sources](#data-sources)
     + [Approach](#approach)
-    + [Needs of this project](#needs-of-this-project)
+* [Files consisting names and path](#files-consisting-names-and-path) 
 * [Contact](#contact)
 
 
@@ -95,13 +95,13 @@ This folder consists 4 files.
 3. Training Label - Target class which is total cases is given by city and time.
 4. Submission File - Week of the year and City for which we have to predict the total cases.
 
-### Random Forest
+### Random Forest Folder
 This folder consists of python files and submission file, made by applying the Random Forest Regression algorithm. It also has the file for selecting the best features.
 
-### XGBoost
+### XGBoost Folder
 This folder consists of python files and submission file, made by applying the XGBoost algorithm.
 
-### TimeSeries
+### TimeSeries Folder
 This folder consists the folder prophet in which there are two folders:
 1. modeling - This folder has all the .ipynb files with different settings of time series prophet model applied and the forecast for sj and forecast for iq are stored seperately as csvs in second folder which consists files related to submissions.
 2. submission_format_files - This folder has the all the submission related files: a) .ipynb for creating the final submission csv from the two different forecasted csv for two different cities. b) actual submission files. c) forecasted San Juan and Iquitos csvs from Time Series forecast by Prophet.
