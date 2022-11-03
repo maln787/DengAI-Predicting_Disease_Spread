@@ -53,11 +53,11 @@ We are using the environmental data collected by various U.S. Federal Government
 
 ### Approach
 
-#### i) Understanding the data
+### i) Understanding the data
 
 To understand the data and the features than can be most useful, I first read few papers and articles. This helped me understand the problem in more depth and what can help me in building the model.
 
-#### ii) Cleaning the data / Engineering the features
+### ii) Cleaning the data / Engineering the features
 
 I first looked at the null values and found that there were very few null values in the dataset. Since the data is continuos, also the data points are of weather and vegetation index, it is highly unlikely that the vegetation changes drastically next week or if summers are going are the temperature is almost going to be same the next week. Therefore, I imputed the null values with forward fill method which fills the current null value with previous value.
 
@@ -65,9 +65,28 @@ After I filled the null values I checked the features and their correlation with
 
 Then, I looked again at the correlation of the features remaining and dropped the features having high multicollinearity, as this is not going to add much information in the modeling and even make model more complex.
 
-#### iii) 
+### iii) Modeling
 
-Initially I had a training labels dataset and in that we seperated the dataframe by two regions 
+#### Part a)
+
+Initially, I had a training labels dataset and in that I seperated the dataframe by two regions San Juan and Iquitos. I did this because we can see that different regions can have certain characteristics that can influence different number of cases like weather of a place or how much vegetation is there or damp water because of it, etc.
+
+In the first part of the modeling, I took all the remaining features and trained the model by Decision Tree Algorithm, and then Random Forest Regressor. I split the data 80:20 into train:test split and then measured the mean absolute error of the test set. One key point to note here would be to keep the random seed because if not then every time we split randomly the results are going to change.
+
+#### Part b)
+
+In the next part, I standardized the data and applied GridSearchCV to Random Forest as it was performing the best amongst other regressors. I also applied dimensionality reduction techniques like PCA to find the MAE with all the algorithms mentioned above. In addition to this, I checked the correlation of different features with our target variable which is total cases and also selected only important features to find the better fit of the model. GridSearchCV helped a bit but we need to improve the MAE score more.
+
+#### Part c)
+
+Next, I applied the time series model to forecast the total cases and use them as predictions for our test set. I used Prophet with hyperparameter tuning and taking different set of features and with different seasonal cycles to find the best fit of features and seasonal cycle. I used select k-best method with chi squared and f_regression function to find the important k features and then I used them as my regressors in the time series model. MAE score impoved by this.
+
+Below is the table of the results that I found by different algorithms in their best settings, I have not incorporated the results with each and every setting that I tried with the models, but you can find more in the python files in this github repository.
+
+<img width="580" alt="Screen Shot 2022-11-03 at 1 06 19 AM" src="https://user-images.githubusercontent.com/44938585/199651234-6224b064-80e6-4b0d-ba30-e8f956a1b750.png">
+
+
+### Files consisting names and path
 
 
 (Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
