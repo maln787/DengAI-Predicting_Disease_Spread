@@ -1,5 +1,4 @@
 # DengAI-Predicting_Disease_Spread
-This project is a part of the takehome assessment for the role of Data Scientist at **Constellation** (https://www.helloconstellation.com/). DengAI: Predicting Disease Spread is a online challenge hosted by **DrivenData**.
 
 ### Project Status: [Active/ Continually improving]
 
